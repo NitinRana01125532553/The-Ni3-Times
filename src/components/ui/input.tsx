@@ -11,7 +11,7 @@ export interface InputProps
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, setSearchRoute, searchRoute, ...props }, ref) => {
 
-    const handleChange = (e) => {
+    const handleChange = (e: any) => {
       setSearchRoute((prev: string) => prev = e.target.value)
       console.log(searchRoute)
     }

@@ -2,7 +2,6 @@ import Heading from '@/components/Heading';
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
 import React, { cache } from 'react'
-import { render } from 'react-dom';
 import { Search } from '../../components/Search';
 import Card from '@/components/card';
 import { RecoilRoot } from 'recoil';

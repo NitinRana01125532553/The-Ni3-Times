@@ -1,5 +1,4 @@
 'use client'
-import { searchRouteAtom } from "@/atoms/atoms"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { redirect } from "next/navigation"
