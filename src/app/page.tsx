@@ -47,7 +47,7 @@ const Home = async() => {
       <div></div>
       {/* All the articles rendered */}
       <div className='flex flex-row flex-wrap w-full justify-center gap-4'>
-        {articles.map((article, b) => article.urlToImage === null ? "" : <Card key={b} img={article.urlToImage} title={article.title} desc={article.Description} link={article.url}/>)}
+        {articles.map((article: any, b: any) => article.urlToImage === null ? "" : <Card key={b} img={article.urlToImage} title={article.title} desc={article.Description} link={article.url}/>)}
       </div>
     </div>
   );
