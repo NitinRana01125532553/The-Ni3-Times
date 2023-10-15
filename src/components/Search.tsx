@@ -8,13 +8,18 @@ import { useRecoilState, useRecoilValue } from "recoil"
 
 export function Search () {
 
+  const navigate = (e: any) => {
+    e.preventDefault();
+    router.push(`/${searchRoute}`)
+  }
+
   const router = useRouter();
   const [searchRoute, setSearchRoute] = useState("");
 
   return (
     <form className="flex w-full max-w-sm items-center space-x-2">
-      <Input placeholder="Search...." setSearchRoute={setSearchRoute} searchRoute={searchRoute} />
-      <Button type="submit" onClick={() => router.push(`/${searchRoute}`)}>Search</Button>
+      <Input type="text" placeholder="Search...." setSearchRoute={setSearchRoute} searchRoute={searchRoute} />
+      <Button type="submit" onClick={navigate}>Search</Button>
     </form>
   )
 }
