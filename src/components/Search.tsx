@@ -13,7 +13,7 @@ export function Search () {
 
   return (
     <form className="flex w-full max-w-sm items-center space-x-2">
-      <Input type="email" placeholder="Search...." setSearchRoute={setSearchRoute} searchRoute={searchRoute} />
+      <Input placeholder="Search...." setSearchRoute={setSearchRoute} searchRoute={searchRoute} />
       <Button type="submit" onClick={() => router.push(`/${searchRoute}`)}>Search</Button>
     </form>
   )
