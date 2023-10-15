@@ -10,8 +10,8 @@ const Navbar = ({categories}: props) => {
     <div className={`${categories.length == 0 ? "hidden" : ""} hidden lg:flex`}>
     <div className={`w-full p-2`}>
       <ul className="lg:flex flex-row gap-12 justify-center w-full">
-        {categories.map((category) => (
-          <NavLink category={category} />
+        {categories.map((category, b) => (
+          <NavLink key={b} category={category} />
         ))}
       </ul>
     </div>
