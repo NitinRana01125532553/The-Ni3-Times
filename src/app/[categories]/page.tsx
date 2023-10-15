@@ -147,7 +147,7 @@ const page = async ({params}: {params: {categories: string}}) => {
       </div>
       {/* the news */}
       <div className='flex flex-row flex-wrap w-full justify-center gap-4'>
-        {news.map(article => article.urlToImage === null ? "" : <Card img={article.urlToImage} title={article.title} desc={article.Description} link={article.url} />)}
+        {news.map((article, b) => article.urlToImage === null ? "" : <Card key={b} img={article.urlToImage} title={article.title} desc={article.Description} link={article.url} />)}
       </div>
     </div>
   );
